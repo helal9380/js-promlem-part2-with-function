@@ -14,18 +14,19 @@ function divided(a, b) {
 function calculate(a, b, oparetion) {
     if(oparetion === 'add') {
         const result = add(a, b);
-        console.log(result)
+        return result
     }
     else if(oparetion === 'substract') {
         const result = substract(a, b);
-        console.log(result)
+        return result;
     }
     else if(oparetion === 'divided') {
         const result = divided(a, b)
-        console.log(result)
+        return result;
     }
     else {
         console.log('please give me the "addition" "substract" "divition"')
     }
 }
 const result = calculate(54, 32, 'substract');
+console.log(result)
